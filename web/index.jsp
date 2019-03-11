@@ -23,11 +23,16 @@
                 text-align: center;
             }
             .content-body {
-                padding: 25px;
-                
+                padding: 25px;   
             }
             .content-spacer {
                 height: 20px;
+            }
+            .center {
+                text-align: center;
+            }
+            .justify {
+                text-align: justify;
             }
             .inner-box {
                 margin: 15px;
@@ -38,64 +43,111 @@
     </head>
     <body>
         
-        <div class="page-content">
-            <div class="content-header">
+        <div class="container-fluid">
+            <div class="row center">
                 <h1>Getting Started with JavaServer Pages(JSP)</h1>
-                <div class="row" style="color: red; text-align: center; border: 1px solid;height: 40px;">
-                    ADD some image here
+                <div class="col-md-3"></div>
+                <div class="col-md-6" style="text-align: center;">
+                    <img src="images/webservice.jpg" alt="webservice.jpg" style="height: 100%"/>
                 </div>
             </div>
-            <div class="row content-body">
-                <div class="row content-spacer"></div>
+            <div class="row">
+                <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <h3>Table of content</h3>
+                    <h2>Table of content</h2>
                 </div>
-                <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
                     <ul>
-                    <li><a href="#i-introduction">I. Introduction</a>
-                    <li><a href="#i-about">II. About Web Services using JSP</a>
-                    <li>III. Getting Started
-                    <li>IV. 
-                    <li>V. Conclusion
-                    <li><a href="#i-examples">VI. Examples</a>
-                    <li><a href="#i-references">VII. References</a>
+                        <li><a href="#i-introduction">I. Introduction</a></li>
+                        <li><a href="#i-about">II. About Web Services using JSP</a></li>
+                        <li><a href="#i-starting">III. Getting Started</a></li>
+                        <li>IV. </li>
+                        <li>V. Conclusion</li>
+                        <li><a href="#i-examples">VI. Examples</a></li>
+                        <li><a href="#i-references">VII. References</a></li>
                     </ul>
                 </div>
-                <div class="row" id="i-introduction">
-                    <h3>I. Introduction</h3>
-                    <div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="i-introduction">
+                    <h2>I. Introduction</h2>
+                    <div class="justify">
+                        In this tutorial we will show you how to set up, configure 
+                        and build a Web Service using the Java Server Pages (JSP).
+                        We expect the reader to have a comfortable level of understanding 
+                        of the Java language, for those that are not comfortable, 
+                        links with references will be provided so you can follow this
+                        tutorial at your own pace.
+                        
+                        This tutorial will teach you how to set up, configure and 
+                        use JSP
                         About this project, why we are doing, how we are doing, what you will learn
                     </div>
                 </div>
-                <div class="row" id="i-about">
-                    <h3>II. About Web Services using JSP</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="i-about">
+                    <h2>II. About Web Services using JSP</h2>
+                    <div class="justify">
+                    There are many technologies involved when creating a Web Service,
+                    so we will try to address all the necessary bits and build from there.
+                    The first thing we need to know is "what is a Web Service?".
+                    Web Services are a communication environment so two machines
+                    can communicate over a network simplifying their interaction.
+                    
                     Describe the technologies SOAP, XML, WSDL, what is JSP, Why use JSP
+                    </div>
                 </div>
-                <div class="row">
-                    <h3>III. Getting Started</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="i-starting">
+                    <h2>III. Getting Started</h2>
+                    <div class="justify">
                     How to install the needed softwares: JDK-8.2, netbeans 8.2
+                    </div>
                 </div>
-                <div class="row">
-                    <h3>IV. </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="i-">
+                    <h2>IV. </h2>
                 </div>
-                <div class="row">
-                    <h3>V. </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h2>V. </h2>
                 </div>
-                <div class="row" id="i-examples">
-                    <h3>VI. Example</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="i-examples">
+                    <h2>VI. Example</h2>
                     <div class="col-md-12">
                         The final result will have a similar appearance to the following example.
                     </div>
                     <div class="col-md-6 inner-box">
                         Input a list of numbers. E.g. 1 5 12 90 33 
-                        <form action="response.jsp">
+                        <form target="_blank"
+                              action="response.jsp">
                             <input type="text" class="form-control" name="inputValue"><br>
                             <input type="submit" class="btn btn-primary" value="Submit">
                         </form>
                     </div>
                 </div>
-                <div class="row" id="i-references">
-                    <h3>VII. References</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="i-references">
+                    <h2>VII. References</h2>
+                    <p><a href="https://www.tutorialspoint.com/webservices/what_are_web_services.htm"
+                          >Tutorial Point - Web Services</a>
                 </div>
             </div>
         </div>
