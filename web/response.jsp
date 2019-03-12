@@ -9,9 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Tutorial</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+        <style>
+            .center {
+                text-align: center;
+            }
+        </style>
+        <title>Web Services Response</title>
     </head>
     <body>
+        <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row center">
+                <h1>Web Service Response</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
         <%-- start web service invocation --%><hr/>
         <%
             
@@ -25,12 +38,17 @@
                 userKey = port.getKey();
                 // send client values with valid key
                 java.lang.String result = port.mergeSort(input, userKey);
-                out.println("Sorted values: " + result);
+                out.println("<h3>After sending the request the sorted array is: "
+                        + "[ " + result + "]</h3>");
             } catch (Exception ex) {
                 // print error
                 out.println("Error: " + ex);
             }
         %>
         <%-- end web service invocation --%><hr/>
+                <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
